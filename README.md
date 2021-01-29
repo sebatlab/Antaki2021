@@ -5,7 +5,7 @@
 -------------
 
 ## Table of Contents
-* [Full Genetic Table](#full_genetic_table)
+* [Full Genetic Table](#full-genetic-table)
 
 
 -------
