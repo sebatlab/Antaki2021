@@ -5,78 +5,132 @@
 -------------
 
 ## Table of Contents
-* [Full Genetic Table](#full-genetic-table)
+* [Supplemetnary Table 2](#supplementary-table-2)
 
 
 -------
 
-### Full Genetic Table
+### Supplementary Table 2
 
-[`antaki2021_full_genetic_table.tsv`](https://github.com/sebatlab/Antaki2021/blob/main/antaki2021_full_genetic_table.tsv)
+[`SupplementaryTable2.tsv`](https://github.com/sebatlab/Antaki2021/blob/main/SupplementaryTable2.tsv)
+
+This table contains the all the genetic features used for rare variant analysis, common variant analysis, and the construction of regression models. 
 
 **Header**
 
-* fid
+* FID
   * Family ID
-* iid
+* IID
   * Individual ID
-* phen
+* Phenotype
   * Phenotype: 1 = ASD; 0 = Control
-* sex
+* Sex
   * Sex: 0 = Male; 1 =  Female
-* is_eur
+* Cohort
+  * Data collection for a sample. Either REACH, SSC, or SPARK
+* Family Type
+  * Family structure for a given offspring. Either trio (both parents sequenced), maternal (mother only sequenced), or paternal (father only sequenced)
+* Cases in Family
+  * Number of affected children in a family. Simplex == 1
+* EUR Ancestry
   * European Ancestry: 1 = False; 1 = True
-* snv_dn_lof
-  * Count of de novo loss of function SNV/INDEL 
-* snv_dn_mis
+  
+* dnMIS
   * Count of de novo missense SNV
-* snv_lof_t
-  * Count of inherited rare variants
-* snv_lof_pt
-  * Count of paternally transmitted rare variants
-* snv_lof_pn
-  * Count of paternally nontransmitted rare variants 
-* snv_lof_mt
-  * Count of maternally transmitted rare variants
-* snv_lof_mn
-  * Count of maternally nontransmitted rare variants
-* prs_asd
+* dnLoF
+  * Count of de novo loss of function SNV/INDEL
+* dnSV
+  * Count of de novo LoF SVs
+* inhLoF
+  * Count of inherited LoF SNV/INDEL
+
+* inhLoF Paternal Transmitted
+  * Count of paternally transmitted LoF SNV/INDEL
+* inhLoF Paternal Untransmitted
+  * Count of paternally nontransmitted LoF SNV/INDEL 
+* inhLoF Maternal Transmitted
+  * Count of maternally transmitted LoF SNV/INDEL
+* inhLoF Maternal Untransmitted
+  * Count of maternally nontransmitted LoF SNV/INDEL
+
+* SV LoF Paternal Transmitted
+  * Count of paternally transmitted LoF SV
+* SV LoF Paternal Untransmitted
+  * Count of paternally nontransmitted LoF SV
+* SV LoF Maternal Transmitted
+  * Count of maternally transmitted LoF SV
+* SV LoF Maternal Untransmitted
+  * Count of maternally nontransmitted LoF SV
+
+* CRE SV Paternal Transmitted
+  * Count of paternally transmitted CRE SV
+* CRE SV Paternal Untransmitted
+  * Count of paternally nontransmitted CRE SV
+* CRE SV Maternal Transmitted
+  * Count of maternally transmitted CRE SV
+* CRE SV Maternal Untransmitted
+  * Count of maternally nontransmitted CRE SV
+
+* PS ASD
   * Autism polygenic risk score (PS) for the offspring 
-* prs_asd_pat
+* PS ASD Father
   * Autism PS for the father
-* prs_asd_mat
+* PS ASD Mother
   * Autism PS for the mother
-* midparent_prs_asd
+* Midparent PS ASD
   * Defined as (`prs_asd_pat`+`prs_asd_mat`)/2
-* ptdt_prs_asd
+* pTDT ASD Dev
   * Defined as `prs_asd` - `midparent_prs_asd` 
-* prs_ea
-  * Educational attainment PS for the offspring
-* prs_ea_pat
-  * Educational attainment PS for the father
-* prs_ea_mat
-  * Educational attainment PS for the mother
-* midparent_prs_ea
-  * Defined as (`prs_ea_pat`+`prs_ea_mat`)/2
-* ptdt_prs_ea
-  * Defined as `prs_ea` - `midparent_ea_asd` 
-* prs_scz
+
+* PS SCZ
   * Schizophrenia PS for the offspring
-* prs_scz_pat
+* PS SCZ Father
   * Schizophrenia PS for the father
-* prs_scz_mat
+* PS SCZ Mother
   * Schizophrenia PS for the mother
-* midparent_prs_scz
+* Midparent PS SCZ
   * Defined as (`prs_scz_pat`+`prs_scz_mat`)/2
-* ptdt_prs_scz
+* pTDT SCZ Dev
   * Defined as `prs_scz` - `midparent_scz_asd` 
+
+
+* PS EA
+  * Educational attainment PS for the offspring
+* PS EA Father
+  * Educational attainment PS for the father
+* PS EA Mother
+  * Educational attainment PS for the mother
+* Midparent PS EA
+  * Defined as (`prs_ea_pat`+`prs_ea_mat`)/2
+* pTDT EA Dev
+  * Defined as `prs_ea` - `midparent_ea_asd` 
+
+
 * PC1 .. PC10
-  * First ten ancestry principal components
-* all_combined_score
-  * Normalized estimates from multivariate regression combining de novo, inherited rare, and common variants
-* ps_combined_score
-  * Normalized estimates from multivariate regression combining polygenic risk for autism, educational attainment, and schizophrenia
-* rare_combined_score
+  * First ten ancestry principal components for the offspring
+* PC1 Father .. PC2 Father
+  * First two ancestry principal components for the father
+* PC1 Mother .. PC2 Mother
+  * First two ancestry principal components for the mother
+
+
+* dnMIS Score
+  * Normalized estimates from multivariate regression for de novo missense load
+* dnLoF Score
+  * Normalized estimates from multivariate regression for de novo LoF SNV/INDEL load
+* inhLoF Score
+  * Normalized estimates from multivariate regression for inherited LoF SNV/INDEL
+* Rare Combined Score
   * normalized estimates from multivariate regression combining de novo and inherited rare variants 
+*PS ASD Score
+  * Normalized estimates from multivariate regression combining polygenic risk for autism
+*PS SCZ Score
+  * Normalized estimates from multivariate regression combining polygenic risk for schizophrenia
+*PS EA Score
+  * Normalized estimates from multivariate regression combining polygenic risk for educational attainment
+* PS Combined
+  * Normalized estimates from multivariate regression combining polygenic risk for autism, educational attainment, and schizophrenia
+* All Combined Score
+  * Normalized estimates from multivariate regression combining de novo, inherited rare, and common variants
 
 ---------------
