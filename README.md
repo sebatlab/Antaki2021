@@ -34,13 +34,19 @@ This table contains the all the genetic features used for rare variant analysis,
   * Number of affected children in a family. Simplex == 1
 * EUR Ancestry
   * European Ancestry: 1 = False; 1 = True
-  
+
+----------
+
 * dnMIS
   * Count of de novo missense SNV
 * dnLoF
   * Count of de novo loss of function SNV/INDEL
 * dnSV
   * Count of de novo LoF SVs
+  
+----------
+
+
 * inhLoF
   * Count of inherited LoF SNV/INDEL
 
@@ -71,6 +77,8 @@ This table contains the all the genetic features used for rare variant analysis,
 * CRE SV Maternal Untransmitted
   * Count of maternally nontransmitted CRE SV
 
+----------
+
 * PS ASD
   * Autism polygenic risk score (PS) for the offspring 
 * PS ASD Father
@@ -93,7 +101,6 @@ This table contains the all the genetic features used for rare variant analysis,
 * pTDT SCZ Dev
   * Defined as `prs_scz` - `midparent_scz_asd` 
 
-
 * PS EA
   * Educational attainment PS for the offspring
 * PS EA Father
@@ -105,6 +112,7 @@ This table contains the all the genetic features used for rare variant analysis,
 * pTDT EA Dev
   * Defined as `prs_ea` - `midparent_ea_asd` 
 
+---------
 
 * PC1 .. PC10
   * First ten ancestry principal components for the offspring
@@ -113,6 +121,7 @@ This table contains the all the genetic features used for rare variant analysis,
 * PC1 Mother .. PC2 Mother
   * First two ancestry principal components for the mother
 
+---------------
 
 * dnMIS Score
   * Normalized estimates from multivariate regression for de novo missense load
@@ -122,15 +131,14 @@ This table contains the all the genetic features used for rare variant analysis,
   * Normalized estimates from multivariate regression for inherited LoF SNV/INDEL
 * Rare Combined Score
   * normalized estimates from multivariate regression combining de novo and inherited rare variants 
-*PS ASD Score
+* PS ASD Score
   * Normalized estimates from multivariate regression combining polygenic risk for autism
-*PS SCZ Score
+* PS SCZ Score
   * Normalized estimates from multivariate regression combining polygenic risk for schizophrenia
-*PS EA Score
+* PS EA Score
   * Normalized estimates from multivariate regression combining polygenic risk for educational attainment
 * PS Combined
   * Normalized estimates from multivariate regression combining polygenic risk for autism, educational attainment, and schizophrenia
 * All Combined Score
   * Normalized estimates from multivariate regression combining de novo, inherited rare, and common variants
-
 ---------------
