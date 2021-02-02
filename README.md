@@ -5,7 +5,7 @@
 -------------
 
 ## Table of Contents
-* [Supplemetnary Table 2](#supplementary-table-2)
+* [Supplementary Table 2](#supplementary-table-2)
 
 
 -------
