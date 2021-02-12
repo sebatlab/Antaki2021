@@ -5,14 +5,14 @@
 -------------
 
 ## Table of Contents
-* [Supplementary Table 2](#supplementary-table-2)
+* [Supplementary Table 1](#supplementary-table-1)
 
 
 -------
 
-### Supplementary Table 2
+### Supplementary Table 1
 
-[`SupplementaryTable2.tsv`](https://github.com/sebatlab/Antaki2021/blob/main/SupplementaryTable2.tsv)
+[`SupplementaryTable1.tsv`](https://github.com/sebatlab/Antaki2021/blob/main/SupplementaryTable1.tsv)
 
 This table contains the all the genetic features used for rare variant analysis, common variant analysis, and the construction of regression models. 
 
