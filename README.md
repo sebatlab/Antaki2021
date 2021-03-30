@@ -3,16 +3,18 @@
 ### A phenotypic spectrum of autism is attributable to the combined effects of rare variants, polygenic risk and sex
 
 -------------
+## Data files
+Data files include `SummaryGeneticData_Reach_SSC_SPARK.csv` and `master_phen_4.csv` (which includes clinical phenotype information). These will be deposited into SFARI.
 
 ## Table of Contents
-* [Supplementary Table 1](#supplementary-table-1)
+* [SummaryGeneticData_Reach_SSC_SPARK](#Summary_Genetic_Data_REACH_SSC_SPARK)
 
 
 -------
 
-### Supplementary Table 1
+### Summary_Genetic_Data_REACH_SSC_SPARK
 
-[`SupplementaryTable1.tsv`](https://github.com/sebatlab/Antaki2021/blob/main/SupplementaryTable1.tsv)
+[`SummaryGeneticData_Reach_SSC_SPARK`]
 
 This table contains the all the genetic features used for rare variant analysis, common variant analysis, and the construction of regression models. 
 
@@ -123,22 +125,10 @@ This table contains the all the genetic features used for rare variant analysis,
 
 ---------------
 
-* dnMIS Score
-  * Normalized estimates from multivariate regression for de novo missense load
-* dnLoF Score
-  * Normalized estimates from multivariate regression for de novo LoF SNV/INDEL load
-* inhLoF Score
-  * Normalized estimates from multivariate regression for inherited LoF SNV/INDEL
-* Rare Combined Score
+* RVRS
   * normalized estimates from multivariate regression combining de novo and inherited rare variants 
-* PS ASD Score
-  * Normalized estimates from multivariate regression combining polygenic risk for autism
-* PS SCZ Score
-  * Normalized estimates from multivariate regression combining polygenic risk for schizophrenia
-* PS EA Score
-  * Normalized estimates from multivariate regression combining polygenic risk for educational attainment
-* PS Combined
+* PRS
   * Normalized estimates from multivariate regression combining polygenic risk for autism, educational attainment, and schizophrenia
-* All Combined Score
+* GRS
   * Normalized estimates from multivariate regression combining de novo, inherited rare, and common variants
 ---------------
