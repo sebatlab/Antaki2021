@@ -39,7 +39,7 @@ This table contains the all the genetic features used for rare variant analysis,
 * Cases in Family
   * Number of affected children in a family. Simplex == 1
 * EUR Ancestry
-  * European Ancestry: 1 = False; 1 = True
+  * European Ancestry: 0 = False; 1 = True
 
 ----------
 
