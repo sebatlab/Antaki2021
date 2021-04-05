@@ -8,7 +8,7 @@ Data files include `SummaryGeneticData_Reach_SSC_SPARK.csv` and `master_phen_4.c
 
 ## Analysis code
 
-The analysis code is in a Colab notebook: https://colab.research.google.com/drive/1S6Iqp_ydL2_BJdBHzx8j_tufTtPtOQzh?usp=sharing
+The analysis code is in a Colab notebook (most recent version): https://colab.research.google.com/drive/1S6Iqp_ydL2_BJdBHzx8j_tufTtPtOQzh?usp=sharing
 
 ## Table of Contents
 * [SummaryGeneticData_Reach_SSC_SPARK](#Summary_Genetic_Data_REACH_SSC_SPARK)
